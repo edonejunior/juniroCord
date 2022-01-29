@@ -57,8 +57,8 @@ export default function PaginaInicial() {
             as="form"
             onSubmit={function(event){
               event.preventDefault();
-              //Roteamento Next
-              roteamento.push('/chat');
+              //Roteamento Next e enviando na URL quem é.
+              roteamento.push(`/chat?username=${username}`);
             }}
             styleSheet={{
               display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
